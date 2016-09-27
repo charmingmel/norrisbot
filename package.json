@@ -20,7 +20,7 @@
     "norrisbot": "bin/bot.js"
   },
   "scripts": {
-    "start": "node bin/bot.js",
+    "start": "nodemon bin/bot.js",
     "test": "node_modules/.bin/xo data/jokesFetcher.js bin/bot.js lib/norrisbot.js"
   },
   "author": {
@@ -33,12 +33,14 @@
   },
   "dependencies": {
     "async": "^1.4.1",
+    "dotenv": "^2.0.0",
     "progress": "^1.1.8",
     "request": "^2.60.0",
     "slackbots": "^0.3.0",
     "sqlite3": "^3.0.10"
   },
   "devDependencies": {
+    "nodemon": "^1.10.2",
     "xo": "^0.5.2"
   },
   "xo": {
